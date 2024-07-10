@@ -1,9 +1,6 @@
 <?php
-
 namespace App\Http\Requests;
-
 use Illuminate\Foundation\Http\FormRequest;
-
 class StoreMovieRequest extends FormRequest
 {
     /**
@@ -13,7 +10,6 @@ class StoreMovieRequest extends FormRequest
     {
         return true;
     }
-
     /**
      * Get the validation rules that apply to the request.
      *
@@ -24,7 +20,6 @@ class StoreMovieRequest extends FormRequest
         return [
             'category_id' => 'required|integer',
             'name' => 'required|max:255',
-            'slug' => 'required|unique:movies,slug|max:255',
             'description' => 'required|min:25'
         ];
     }

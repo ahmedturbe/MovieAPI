@@ -1,9 +1,6 @@
 <?php
-
 namespace App\Http\Requests;
-
 use Illuminate\Foundation\Http\FormRequest;
-
 class StoreActorRequest extends FormRequest
 {
     /**
@@ -13,7 +10,6 @@ class StoreActorRequest extends FormRequest
     {
         return true; //Authorize request yes no
     }
-
     /**
      * Get the validation rules that apply to the request.
      *

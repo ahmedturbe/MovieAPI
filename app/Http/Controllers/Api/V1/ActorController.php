@@ -1,13 +1,10 @@
 <?php
-
 namespace App\Http\Controllers\Api\V1;
-
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Actor;
 use App\Http\Requests\StoreActorRequest;
 //use Illuminate\Console\View\Components\Task;
-
 class ActorController extends Controller
 {
     // Get all actors
@@ -22,9 +19,7 @@ class ActorController extends Controller
     {
         $actor = Actor::create($request->validated());
         return Actor::latest()->first();
-
     }
-
     /**
      * Display the specified resource.
      */

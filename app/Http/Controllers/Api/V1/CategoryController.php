@@ -1,12 +1,9 @@
 <?php
-
 namespace App\Http\Controllers\Api\V1;
-
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Category;
 use App\Http\Requests\StoreCategoryRequest;
-
 class CategoryController extends Controller
 {
     /**
@@ -24,7 +21,6 @@ class CategoryController extends Controller
         $category = Category::create($request->validated());
         return Category::latest()->first();
     }
-
     /**
      * Display the specified resource.
      */
@@ -40,7 +36,6 @@ class CategoryController extends Controller
         $category->update($request->validated());
         return "Category updated";
     }
-
     /**
      * Remove the specified resource from storage.
      */
